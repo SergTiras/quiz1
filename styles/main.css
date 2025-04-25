@@ -1,0 +1,28 @@
+.main{
+    padding-top: 190px;
+    padding-bottom: 231px;
+}
+
+.main .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-info-title{
+    font-family: 'Museo-Bold',sans-serif;
+    font-size: 54px;
+    line-height: 65px;
+    margin-bottom: 40px;
+}
+
+.main-info-title span{
+    color: #6933DC;
+}
+
+.main-info-text{
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 486px;
+    margin-bottom: 60px;
+}
