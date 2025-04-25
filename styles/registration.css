@@ -1,0 +1,80 @@
+.main{
+    padding-top: 140px;
+    padding-bottom: 122px;
+}
+
+.main .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-data-title{
+    font-family: 'Museo-Bold',sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 60px;
+}
+
+.main-data-title span{
+    color: #6933DC;
+}
+
+.main-data-input{
+    width: 450px;
+    height: 74px;
+    padding: 12px 23px;
+    border: 1px solid #C1BBBB;
+    position: relative;
+    box-sizing: border-box;
+    transition: .2s ease all;
+}
+
+.main-data-input input{
+    width: 100%;
+    height: 48px;
+    border: none;
+    outline: none;
+    font-family: 'Museo-Bold',sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6933DC;
+}
+
+.input-label{
+    position: absolute;
+    top: 27px;
+    left: 23px;
+    line-height: 22px;
+    transition: 0.4s ease all;
+}
+
+.form-input:focus ~ .input-label,
+.form-input:not(:focus):valid ~ .input-label {
+    top: 6px
+}
+
+.main-data-input:focus-within{
+    border-left: 5px solid #6933DC;
+}
+
+
+.form-input:valid, .form-input:focus{
+    margin-top: 27px;
+    height: auto;
+}
+
+.checkbox{
+    margin-top: 16px;
+    margin-bottom: 60px;
+}
+
+.checkbox input{
+    position: relative;
+    top: 2px;
+}
+
+.checkbox-label{
+    font-size: 12px;
+    line-height: 14px;
+}
