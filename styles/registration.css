@@ -9,17 +9,6 @@
     align-items: center;
 }
 
-.main-data-title{
-    font-family: 'Museo-Bold',sans-serif;
-    font-size: 48px;
-    line-height: 58px;
-    margin-bottom: 60px;
-}
-
-.main-data-title span{
-    color: #6933DC;
-}
-
 .main-data-input{
     width: 450px;
     height: 74px;

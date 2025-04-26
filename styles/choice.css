@@ -1,0 +1,56 @@
+.main{
+    padding-top: 180px;
+    padding-bottom: 227px;
+}
+
+.main .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choice-title{
+    margin-bottom: 40px;
+}
+
+.choice-text{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 60px;
+}
+
+.choice-options{
+    width: 583px;
+
+}
+
+.choice-option{
+    width: 100%;
+    padding: 26px 40px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid #C1BBBB;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.choice-option-arrow{
+    display: none;
+}
+
+.choice-option:hover{
+
+    font-family: 'Museo-Bold',sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6933DC;
+    border-left: 5px solid #6933DC;
+
+
+}
+
+.choice-option:hover .choice-option-arrow{
+    display: block;
+}
