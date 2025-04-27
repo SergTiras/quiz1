@@ -1,0 +1,31 @@
+.main{
+    padding-top: 140px;
+    padding-bottom: 91px;
+}
+
+.main .container{
+    background-image: url("../images/Question-marks.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.result-main-title{
+    max-width: 588px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.result-main-result{
+    background-image: url("../images/result-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 100px 112px;
+    font-family: 'Museo-Bold',sans-serif;
+    font-size: 158px;
+    line-height: 190px;
+    text-align: center;
+    color: #FFFFFF;
+}
