@@ -130,6 +130,13 @@ input[type="radio"]:checked:before {
     color: #fff;
 }
 
+.transparent-button:disabled{
+    border-color: #e2dfe7;
+    color: #e2dfe7;
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
 .test-time {
     display: flex;
 }

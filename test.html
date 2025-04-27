@@ -15,66 +15,34 @@
 </header>
 <section class="main">
     <div class="container">
-        <div class="test-pre-title">Тест №1. "JavaScript: Начальный уровень"</div>
-        <div class="test-progress-bar">
-            <div class="test-progress-bar-item complete">
-                <div class="test-progress-bar-circle"></div>
-                <div class="test-progress-bar-text">Вопрос 1</div>
-            </div>
-            <div class="test-progress-bar-item active">
-                <div class="test-progress-bar-circle"></div>
-                <div class="test-progress-bar-text">Вопрос 2</div>
-            </div>
-            <div class="test-progress-bar-item ">
-                <div class="test-progress-bar-circle"></div>
-                <div class="test-progress-bar-text">Вопрос 3</div>
-            </div>
-            <div class="test-progress-bar-item">
-                <div class="test-progress-bar-circle"></div>
-                <div class="test-progress-bar-text">Вопрос 4</div>
-            </div>
-            <div class="test-progress-bar-item">
-                <div class="test-progress-bar-circle"></div>
-                <div class="test-progress-bar-text">Вопрос 5</div>
-            </div>
+        <div class="test-pre-title" id="pre-title">Тест №1. "JavaScript: Начальный уровень"</div>
+        <div class="test-progress-bar" id = "test-progress-bar">
+
         </div>
-        <h1 class="test-title common-title"><span>Вопрос 2:</span> Тут должен быть текст вопроса?</h1>
-        <div class="test-answers">
-            <div class="test-answer">
-                <input type="radio" id="answer-1" name="answer">
-                <label for="answer-1">Вариант ответа 1</label>
-            </div>
-            <div class="test-answer">
-                <input type="radio" id="answer-2" name="answer">
-                <label for="answer-2">Вариант ответа 2</label>
-            </div>
-            <div class="test-answer">
-                <input type="radio" id="answer-3" name="answer">
-                <label for="answer-3">Вариант ответа 3</label>
-            </div>
-            <div class="test-answer">
-                <input type="radio" id="answer-4" name="answer">
-                <label for="answer-4">Вариант ответа 4</label>
-            </div>
+        <h1 class="test-title common-title" id="test-title"><span>Вопрос 2:</span> Тут должен быть текст вопроса?</h1>
+        <div class="test-answers" id="test-answers">
+
         </div>
         <div class="test-actions">
             <div class="test-action">
-                <button class="button transparent-button">Назад</button>
+                <button class="button transparent-button" id="prev" disabled>Назад</button>
             </div>
             <div class="test-time">
                 <div class="test-time-text">Осталось времени:</div>
-                <div class="test-time-value">49</div>
+                <div class="test-time-value" id="timer">59</div>
             </div>
             <div class="test-action">
-                <button class="button transparent-button">Дальше</button>
+                <button class="button transparent-button" id="next" disabled>Дальше</button>
             </div>
         </div>
-        <div class="skip-question">
-            <div class="skip-question-text">Пропустить вопрос</div>
+        <div class="skip-question" >
+            <a href="javascript:void(0)" class="skip-question-text" id="skip-question">Пропустить вопрос</a>
             <div class="skip-question-arrow"><img src="images/arrow.png" alt="arrow"></div>
         </div>
     </div>
 </section>
 <footer class="footer">«АйтилогияQuiz» © Все права защищены / 2022</footer>
+<script src="scripts/common.js"></script>
+<script src="scripts/test.js"></script>
 </body>
 </html>
