@@ -1,3 +1,7 @@
+:root{
+    --after-width: 0;
+}
+
 .main {
     padding-top: 20px;
     padding-bottom: 56px;
@@ -36,7 +40,7 @@
 .test-progress-bar-item:not(:last-child)::after{
     content: "";
     position: absolute;
-    width: 184px;
+    width: var(--after-width);
     height: 6px;
     background-color: #DCDCF3;
     top: 10px;
@@ -59,7 +63,7 @@
     background-color: #6933DC;
     z-index: -1;
     position: absolute;
-    width: 184px;
+    width: var(--after-width);
     height: 6px;
     top: 10px;
     left: 35px;
@@ -128,6 +132,13 @@ input[type="radio"]:checked:before {
 .transparent-button:hover {
     background-color: #6933DC;
     color: #fff;
+}
+
+.transparent-button:disabled{
+    border-color: #e2dfe7;
+    color: #e2dfe7;
+    background-color: #fff;
+    cursor: not-allowed;
 }
 
 .test-time {
