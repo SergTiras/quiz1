@@ -40,8 +40,18 @@ body {
     transition: 0.4s;
 }
 
+a.button{
+    text-decoration: none;
+    display: inline-block;
+}
+
 .button:hover{
     background: #2C067CFF;
+}
+
+.button:disabled{
+    background-color: #e2dfe7;
+    cursor: not-allowed;
 }
 
 .footer{
