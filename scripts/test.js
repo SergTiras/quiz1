@@ -33,6 +33,10 @@
             }
         },
         startQuiz() {
+<<<<<<< HEAD
+=======
+            console.log(this.quiz);
+>>>>>>> origin/main
             this.questionTitleElement = document.getElementById('test-title');
             document.getElementById('pre-title').innerText = this.quiz.name;
             this.testAnswers = document.getElementById('test-answers');
@@ -61,8 +65,11 @@
                 this.progressBarElement = document.getElementById('test-progress-bar');
                 const itemElement = document.createElement('div');
                 itemElement.className = 'test-progress-bar-item' + (i === 0 ? ' active' : '');
+<<<<<<< HEAD
                 let afterWidth = 760 / (this.quiz.questions.length - 1);
                 itemElement.style.setProperty('--after-width', afterWidth + 'px');
+=======
+>>>>>>> origin/main
                 const circleElement = document.createElement('div');
                 circleElement.className = 'test-progress-bar-circle';
                 const textElement = document.createElement('div');
@@ -191,22 +198,33 @@
             xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
             xhr.send(JSON.stringify({
                 name: name,
+<<<<<<< HEAD
                 lastName: surname,
+=======
+                surname: surname,
+>>>>>>> origin/main
                 email: email,
                 id: testId,
                 results: this.userResult,
             }));
             if (xhr.status === 200 && xhr.responseText) {
                 let result = null;
+<<<<<<< HEAD
                 let paramString = '';
+=======
+>>>>>>> origin/main
                 try {
                     result = JSON.parse(xhr.responseText);
                 } catch (e) {
                     location.href = 'index.html';
                 }
                 if(result){
+<<<<<<< HEAD
                     let paramString = '?score=' + result.score + '&total=' + result.total;
                     location.href = 'result.html' + paramString;
+=======
+                    console.log(result);
+>>>>>>> origin/main
                 }
             } else {
                 location.href = 'index.html';
