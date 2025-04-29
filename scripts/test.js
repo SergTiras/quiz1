@@ -11,8 +11,7 @@
         userResult: [],
         init() {
             checkUserData();
-            const url = new URL(location.href);
-            const testId = url.searchParams.get("id");
+            const testId = sessionStorage.getItem('testId');
 
             if (testId) {
                 const xhr = new XMLHttpRequest();
@@ -181,11 +180,10 @@
             this.showQuestion();
         },
         complete(){
-            const url = new URL(location.href);
-            const name = url.searchParams.get('name');
-            const surname = url.searchParams.get('surname');
-            const email = url.searchParams.get('email');
-            const testId = url.searchParams.get("id");
+            const name = sessionStorage.getItem('name');
+            const surname = sessionStorage.getItem('surname');
+            const email = sessionStorage.getItem('email');
+            const testId = sessionStorage.getItem("testId");
 
             const xhr = new XMLHttpRequest();
             xhr.open("POST", 'https://testologia.ru/pass-quiz?id=' + testId, false);
@@ -199,16 +197,15 @@
             }));
             if (xhr.status === 200 && xhr.responseText) {
                 let result = null;
-                let paramString = '';
-
                 try {
                     result = JSON.parse(xhr.responseText);
                 } catch (e) {
                     location.href = 'index.html';
                 }
                 if(result){
-                    let paramString = '?score=' + result.score + '&total=' + result.total;
-                    location.href = 'result.html' + paramString;
+                    sessionStorage.setItem('score', result.score);
+                    sessionStorage.setItem('total', result.total);
+                    location.href = 'result.html';
                 }
             } else {
                 location.href = 'index.html';
