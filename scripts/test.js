@@ -195,6 +195,7 @@
                 id: testId,
                 results: this.userResult,
             }));
+            sessionStorage.setItem('userResult', JSON.stringify(this.userResult));
             if (xhr.status === 200 && xhr.responseText) {
                 let result = null;
                 try {

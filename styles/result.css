@@ -21,11 +21,24 @@
     background-size: contain;
     background-position: center;
     max-width: 480px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     padding: 100px 112px;
     font-family: 'Museo-Bold',sans-serif;
     font-size: 158px;
     line-height: 190px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.result-main-answers{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: right;
+}
+
+.result-main-answers img{
+    margin-left: 13px;
 }
